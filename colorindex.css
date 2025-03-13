@@ -1,4 +1,4 @@
-/* Color Variables */
+
 :root {
   --primary-color: #181818; /* Modern Black */
   --secondary-color: #282828; /* Slightly Lighter Black */
@@ -131,8 +131,8 @@ h3 {
     text-align: center;
   }
 }
-/* Hero Section */
-.home {
+/* Home Section */
+.home{
   margin: 40px 60px auto;
   display: flex;
   text-align: justify;
@@ -180,7 +180,7 @@ h3 {
 
 
 /* About Section */
-.about_section {
+.Introduction {
   display: flex;
   flex-direction: column;
   background-size: contain;
@@ -190,22 +190,18 @@ h3 {
   box-shadow: -0px 18px 10px -10px #38bdf8;
   text-shadow: -3px 55px 55px #38bdf8;
 }
-
-/* Introduction Heading */
-.about_section h1 {
+.Introduction h1 {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 20px;
   margin-left: 16px;
   text-align: left; 
 }
-/* Content Container */
 .all_content {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-/* Rows */
 .row {
   display: flex;
   justify-content: space-between;
@@ -213,18 +209,14 @@ h3 {
   gap: 15px;
   padding: 10px;
 }
-/* Text Styles */
 .row h2 {
   font-size: 1.2rem;
   color: var(--text-color);
   margin: 0;
 }
-/* Highlight Important Text */
 .row h2 strong {
   color: #38bdf8;
 }
-
-/* Links Styling */
 .row a {
   color: #38bdf8;
   text-decoration: none;
@@ -240,13 +232,15 @@ h3 {
 /* General Section Styling */
 section {
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 43px;
   border: 2px solid white;
   padding: 0px 10%;
   color: #ffffff;
   text-align: center;
   background: #0d1117; 
-  justify-content: space-around;
+  
   box-shadow: -0px 18px 10px -10px #38bdf8;
   text-shadow: -3px 55px 55px #38bdf8;
 }
@@ -254,31 +248,10 @@ section {
 /* Heading Styling */
 .heading1 {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #61dafb; /* React Blue */
-}
-
-/* Skills Container - Flexbox for Side by Side Layout */ 
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  
-}
-
-/* Left and Right Sections */
-.container1 {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  width: 100%;
 }
 
 /* Technical Skills Section */
@@ -286,8 +259,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 80%;
+  width: 50%;
   margin: auto;
+  border: 2px solid red;
 }
 
 .bar {
@@ -346,8 +320,10 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  width: 50%;
   margin-top: 20px;
   animation: rotateCircle 10s linear infinite; /* Rotate effect */
+  border: 2px solid red;
 }
 
 /* Individual Circular Bars */
@@ -484,91 +460,3 @@ section {
     align-items: center;
   }
 }
-
-
-/* skills section end  */
-
-/* Projects Section start */
-
-#projects {
-  padding: 50px 0;
-  background: var(--bg-color);
-}
-
-#projects .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-#projects .project-item {
-  background: var(--navbar-bg);
-  border: 1px solid var(--primary-color);
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  color: var(--text-color);
-  transition:
-    transform 0.3s,
-    background 0.3s;
-}
-
-#projects .project-item h3 {
-  margin-bottom: 10px;
-  color: var(--primary-color);
-}
-
-#projects .project-item:hover {
-  background: var(--primary-color);
-  color: var(--bg-color);
-  transform: scale(1.05);
-}
-
-/* Projects Section end  */
-/* Contact Section start*/
-#contact {
-  padding: 50px 0;
-  background: var(--navbar-bg);
-  color: var(--text-color);
-}
-
-#contact form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#contact form input,
-#contact form textarea {
-  padding: 10px;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  background: var(--card-bg);
-  color: white;
-}
-
-#contact form button {
-  background: var(--button-bg);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#contact form button:hover {
-  background: var(--button-hover-bg);
-}
-/* Contact Section end */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: var(--navbar-bg);
-  color: white;
-}
-
-/* footer  */
